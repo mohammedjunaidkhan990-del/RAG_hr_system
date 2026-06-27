@@ -1,0 +1,124 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 39px,
+    #0a0a0a1a 39px,
+    #0a0a0a1a 40px
+  ),
+  repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 39px,
+    #0a0a0a1a 39px,
+    #0a0a0a1a 40px
+  );
+}
+
+.auth-card {
+  width: 420px;
+  border: var(--border);
+  box-shadow: 10px 10px 0px var(--black);
+  background: var(--white);
+}
+
+.auth-header {
+  padding: 28px 32px;
+  border-bottom: var(--border);
+}
+
+.auth-header.yellow { background: var(--yellow); }
+.auth-header.cyan   { background: var(--cyan); }
+
+.auth-header h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.auth-header h1 span {
+  color: var(--pink);
+}
+
+.auth-header p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-top: 4px;
+}
+
+.auth-form {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.field input {
+  padding: 12px 14px;
+  font-size: 1rem;
+  font-weight: 500;
+  background: var(--white);
+  width: 100%;
+}
+
+.btn-primary {
+  padding: 14px;
+  font-size: 1rem;
+  background: var(--yellow);
+  color: var(--black);
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.btn-cyan {
+  padding: 14px;
+  font-size: 1rem;
+  background: var(--cyan);
+  color: var(--black);
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.error-box {
+  padding: 12px;
+  background: var(--pink);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: var(--border);
+  letter-spacing: 1px;
+}
+
+.auth-footer {
+  padding: 20px 32px;
+  border-top: var(--border);
+  background: var(--black);
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.auth-footer a {
+  color: var(--yellow);
+  text-decoration: none;
+  border-bottom: 2px solid var(--yellow);
+}
